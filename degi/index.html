@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore job opportunities at Degi and take the next step by applying for available positions today.">
+    <meta name="keywords" content="dsoftware development, jobs">
+    <meta name="author" content="Degi">
+    <meta name="name=robots" content="index, follow">
+    <meta property="og:title" content="Degi">
+    <meta property="og:description"
+        content="Explore job opportunities at Degi and take the next step by applying for available positions today.">
+    <meta property="og:image" content="degi_logo.png">
+
+    <title>Degi | Responsive Site</title>
+    <link rel="icon" href="maybach.png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img id="modern" src="modern.jpg" alt="modern">
+    <h1>
+        Degi Overview
+    </h1>
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">
+                Our mission is to establish the world's premier online technical institution.We provide
+                beginner-friendly courses, shaping the future of education in a digital landscape.
+            </p>
+        </div>
+        <div id="black">
+            <img id="black-image" alt="team" src="black.jpg">
+        </div>
+    </div>
+
+    <h2>Job Openings</h2>
+    <div id="jobs">
+        <div id="jobs-list">
+            <div class="job">
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-detail">Anywhere, Seatle</div>
+                <div class="job-detail">$80,000</div>
+                <div class="job-detail">Jan 17, 2023</div>
+            </div>
+            <div class="job">
+                <div class="job-title">Full Stack Developer</div>
+                <div class="job-detail">San Francisco, CA</div>
+                <div class="job-detail">$110,000</div>
+                <div class="job-detail">Jan 22, 2023</div>
+            </div>
+            <div class="job">
+                <div class="job-title">Data Scientist</div>
+                <div class="job-detail">New York,NY</div>
+                <div class="job-detail">$100,000</div>
+                <div class="job-detail">Jan 19, 2023</div>
+            </div>
+            <div class="job">
+                <div class="job-title">ML Engineer</div>
+                <div class="job-detail">Remote</div>
+                <div class="job-detail">$130,000</div>
+                <div class="job-detail">Jan 23, 2023</div>
+            </div>
+        </div>
+
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Anywhere</td>
+                <td>Seatle</td>
+                <td>$80,000</td>
+                <td>Jan 17, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>San Francisco</td>
+                <td>CA</td>
+                <td>$100,000</td>
+                <td>Jan 22, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>New York</td>
+                <td>NY</td>
+                <td>$110,000</td>
+                <td>Jan 19, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>ML Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$130,000</td>
+                <td>Jan 23, 2023</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="application">
+        <h2>Send Your Application</h2>
+        <form id="application-form" action="https://formbold.com/s/FORM_ID" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="Name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email address" required placeholder="jdoe@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+9999999">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="position">Applied Position</label><br>
+                <select id="position" name="Position Applied" required>
+                    <option value="">Choose Position</option>
+                    <option value="frontend developer">Frontend Developer</option>
+                    <option value="full stack developer">Full Stack Developer</option>
+                    <option value="data scientist">Data Scientist</option>
+                    <option value="ml engineer">ML Engineer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea id="coverletter" name="coverletter" rows="5"
+                    placeholder="What makes you suitable for the job.."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Send Application">
+            </div>
+        </form>
+    </div>
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://www.linkedin.com/in/mudegi-arnold/" target="_blank">Linkedin</a>
+            </li>
+            <li>
+                <a href="https://github.com/mudegiarnold" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com/@mudegiarnold" target="_blank">Youtube</a>
+            </li>
+        </ul>
+        <span class="copyright">© 2024, Degi</span>
+    </div>
+</body>
+
+</html>
